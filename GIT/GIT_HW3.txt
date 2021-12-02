@@ -1,0 +1,46 @@
+1. На локальном репозитории сделать ветки для:
+- Postman 	$ git branch postman
+- Jmeter	$ git branch  jmeter
+- CheckLists	$ git branch checklists
+- Bag Reports	$ git branch  bugreports
+- SQL		$ git branch sql
+- Charles	$ git branch charles
+- Mobile testing $ git branch mobile_testing
+
+2. Запушить все ветки на внешний репозиторий	$ git push origin  --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+$ git checkout bugreports
+$ touch bugreport.txt
+$ nano bugreport.txt прописать структуру
+
+4. Запушить структуру багрепорта на внешний репозиторий
+PC-1@DESKTOP-5K90LJ9 MINGW64 ~/git/homework (bugreports)
+$ git add bugreport.txt
+$ git commit -m "add bugreport"
+$ git push origin -u bugreports
+
+5. Вмержить ветку Bag Reports в Main
+$ git checkout master
+$ git merge bugreports
+
+6. Запушить main на внешний репозиторий.
+$ git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+$ git checkout checklists
+$ touch checklist_1.txt
+$ nano checklist_1.txt прописать структуру
+
+8. Запушить структуру на внешний репозиторий
+$ git add .
+$ git commit -m "add checklist_1.txt"
+$ git push -u origin  checklists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+$ git checkout master
+$ git pull
+
+https://github.com/Beliaev007/homework ссылка на репозиторий
